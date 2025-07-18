@@ -1,8 +1,22 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
-func main(){
+var string_1 = "Nikita"
 
-	fmt.Println("Hello World")	
+func main() {
+	string_2 := "Liza"
+	vowels := "euioa"
+	for _, val := range string_1 {
+		if !strings.ContainsRune(vowels, val) {
+			fmt.Println(string(val))
+		}
+
+	}
+	for _, val := range string_2 {
+		fmt.Printf("%c", val)
+	}
 }
